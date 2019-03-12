@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import './css/style.css';
 import Navbar from './components/navbar';
 import Home from './components/home';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar title="Oscar 2019" />
-        <Home title="The Oscar Winners" />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/navbar" exact component={Navbar} />
+            <Route path="/home" exact component={Home} />
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
