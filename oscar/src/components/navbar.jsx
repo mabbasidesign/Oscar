@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <nav>
-          <h2 className="logo"><a>Oscars 2019</a></h2>
+          <h2 className="logo"><a>{props.title}</a></h2>
           <ul>
             <li><a>Home</a></li>
             <li><a>Best Actors</a></li>
