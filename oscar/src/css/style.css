@@ -146,6 +146,7 @@ nav li a:hover{
   width: 250px;
   height: 250px;
   background-size: cover;
+  border: 0.3px solid #999;
 }
 
 .back{
