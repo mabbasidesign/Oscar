@@ -21,6 +21,13 @@ body {
     border: 1px solid rgb(43, 55, 63);
 }
 
+.container{
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 /* Navbar */
 
 nav{
@@ -125,4 +132,28 @@ nav li a:hover{
 
 .home-thumbnail-3{
   background-image: url("https://images.gulfnews.com/201902/190225%20uae%20wins%20oscar_resources1.jpg")
+}
+
+
+/* Actors */
+
+.actor-container{
+  display: block;
+  text-align: center;
+}
+
+.actor-image{
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+}
+
+.back{
+  display: inline;
+  padding: 5px 10px;
+  background: #333;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
 }
