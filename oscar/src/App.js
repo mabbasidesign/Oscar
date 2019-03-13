@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import Home from './components/home';
 import Actors from './components/actors';
 import Actress from './components/actress';
+import ActorContainer from './components/actorsContainers';
 import Films from './components/films';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -15,7 +16,8 @@ class App extends Component {
           <Navbar title="Oscar2019" />
             <Switch>
               <Route exact path="/" render={() => <Home title="Oscar Winnwers" />} />
-              <Route path="/actors" component={Actors} />
+              {/* <Route path="/actors" component={Actors} /> */}
+              <Route path="/actors" render={() => <ActorContainer title="Best Actors" />} />
               <Route path="/actress" component={Actress} />
               <Route path="/films" component={Films} />
             </Switch>
