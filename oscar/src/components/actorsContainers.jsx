@@ -8,7 +8,12 @@ const ActorContainer = (props) => {
 
     let actorUrl = ActorsList.map((actor) => {
         return (
-            <Route path={`/actors/${actor.url}`} render={() => <Actor />} />
+            <Route path={`/actors/${actor.url}`} render={() => 
+            <Actor 
+            name={actor.name}
+            description={actor.description}
+            image={actor.profile_img}
+            />} />
         );
     });
 
@@ -18,7 +23,7 @@ const ActorContainer = (props) => {
 
     return (
         <div>
-            <Route path="/actors" render={() => <Actors title='Best Actors' />} />
+            <Route exact path="/actors" render={() => <Actors title='Best Actors' />} />
             {actorUrl}
         </div>
     );

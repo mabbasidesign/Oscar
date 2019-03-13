@@ -6,11 +6,11 @@ const Actro = (props) => {
 
     return ( 
         <div className="main-content">
-        <div><Link className='back' to='/'>Back</Link></div>
+        <div><Link className='back' to='/actors'>Back</Link></div>
             <div className="container">
-                <div className="image-profile"></div>
-                <h2></h2>
-                <p></p>
+                <div style={{ backgroundImage: "url(" + props.image + ")" }} className="image-profile"></div>
+                <h2>{props.name}</h2>
+                <p>{props.description}</p>
             </div>
         </div>
      );
